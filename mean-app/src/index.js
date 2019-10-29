@@ -58,7 +58,10 @@ ProtectedRoutes.use((req, res, next) =>{
   
 // defining an array to work as the database (temporary solution)
 app.get('/getAds', async (req, res) => {
-    res.send(await getAds());
+    // res.send(await getAds());
+    res.send({ 
+      message: 'Get Req Updated' 
+  });
 });
 
 app.post('/sendSMS', async (req, res) => {
