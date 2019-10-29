@@ -57,11 +57,11 @@ ProtectedRoutes.use((req, res, next) =>{
 
   
 // defining an array to work as the database (temporary solution)
-ProtectedRoutes.get('/getAds', async (req, res) => {
+app.get('/getAds', async (req, res) => {
     res.send(await getAds());
 });
 
-ProtectedRoutes.post('/sendSMS', async (req, res) => {
+app.post('/sendSMS', async (req, res) => {
     
     //Conexión obtener token
 
